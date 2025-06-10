@@ -224,10 +224,10 @@
 
   <!-- Judul di tengah -->
   <header>
-    <h1>PANDUAN PKV</h1>
+    <h1>PANDUAN TOGEL</h1>
   </header>
 
-  <!-- Konten -->
+   <!-- Konten -->
   <div class="content">
     <section id="domino99">
       <h2>DOMINO 99 (TIE)</h2>
@@ -616,6 +616,14 @@ Baris Atas Lebih Fleksibel: Di baris atas, kamu hanya perlu memastikan kartu ter
         }, index * 150);
       });
     }
+	
   </script>
+<script>
+  // Cek apakah sudah login via PIN
+  if (sessionStorage.getItem("authenticated") !== "true") {
+    window.location.href = "pin.html";
+  }
+</script>
+
 </body>
 </html>
